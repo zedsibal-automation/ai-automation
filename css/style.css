@@ -1838,3 +1838,39 @@ section {
     }
 
 }
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.hero-content,
+.section-title {
+    opacity: 0;
+    transform: translateY(25px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+.hero-content.revealed,
+.section-title.revealed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   ACTIVE NAVIGATION
+========================================================= */
+
+.nav-link.active {
+    color: #00c8ff !important;
+}
+
+
+/* =========================================================
+   BUTTON CLICK EFFECT
+========================================================= */
+
+.button-clicked {
+    transform: scale(0.97) !important;
+}
