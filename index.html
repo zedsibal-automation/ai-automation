@@ -1918,41 +1918,337 @@
          CONTACT SECTION
     ====================================================== -->
 
-    <section
-        id="contact"
-        class="contact-section"
-    >
+  <!-- =====================================================
+     CONTACT / CTA SECTION
+====================================================== -->
 
-        <div class="container">
+<section
+    id="contact"
+    class="contact-section"
+>
 
 
-            <div class="section-title">
+    <div class="container">
+
+
+        <div class="contact-wrapper">
+
+
+            <!-- =================================================
+                 LEFT SIDE
+            ================================================== -->
+
+            <div class="contact-content">
+
+
+                <div class="section-badge">
+
+                    <span></span>
+
+                    LET'S WORK TOGETHER
+
+                </div>
+
 
                 <h2>
-                    Let's Automate Your Business
+
+                    Ready to automate
+                    <span>your business?</span>
+
                 </h2>
 
+
                 <p>
-                    Ready to eliminate repetitive work?
-                    Let's talk about what we can automate.
+
+                    Tell me about your business, your
+                    current challenges, and the repetitive
+                    tasks you'd like to automate.
+
+                    Let's build a smarter system together.
+
                 </p>
 
 
-                <br>
+                <!-- CONTACT DETAILS -->
+
+                <div class="contact-details">
 
 
-                <a
-                    href="mailto:hello@example.com"
-                    class="btn-main"
+                    <!-- EMAIL -->
+
+                    <a
+                        href="mailto:hello@yourdomain.com"
+                        class="contact-detail"
+                    >
+
+                        <div class="contact-detail-icon">
+
+                            <i
+                                class="fa-solid fa-envelope"
+                            ></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Email
+                            </span>
+
+                            <strong>
+                                hello@yourdomain.com
+                            </strong>
+
+                        </div>
+
+                    </a>
+
+
+                    <!-- LOCATION -->
+
+                    <div
+                        class="contact-detail"
+                    >
+
+                        <div class="contact-detail-icon">
+
+                            <i
+                                class="fa-solid fa-location-dot"
+                            ></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Based In
+                            </span>
+
+                            <strong>
+                                Philippines
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RESPONSE -->
+
+                    <div
+                        class="contact-detail"
+                    >
+
+                        <div class="contact-detail-icon">
+
+                            <i
+                                class="fa-solid fa-clock"
+                            ></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span>
+                                Response Time
+                            </span>
+
+                            <strong>
+                                Within 24–48 hours
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 RIGHT SIDE — CONTACT FORM
+            ================================================== -->
+
+            <div class="contact-form-wrapper">
+
+
+                <form
+                    id="contactForm"
+                    class="contact-form"
                 >
 
-                    Book a Free Call
 
-                    <i
-                        class="fa-solid fa-arrow-right"
-                    ></i>
+                    <!-- NAME -->
 
-                </a>
+                    <div class="form-group">
+
+                        <label
+                            for="name"
+                        >
+                            Your Name
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="John Doe"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="form-group">
+
+                        <label
+                            for="email"
+                        >
+                            Email Address
+                        </label>
+
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="john@company.com"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- COMPANY -->
+
+                    <div class="form-group">
+
+                        <label
+                            for="company"
+                        >
+                            Company
+                        </label>
+
+
+                        <input
+                            type="text"
+                            id="company"
+                            name="company"
+                            placeholder="Your Company"
+                        >
+
+                    </div>
+
+
+                    <!-- SERVICE -->
+
+                    <div class="form-group">
+
+                        <label
+                            for="service"
+                        >
+                            What can I help you with?
+                        </label>
+
+
+                        <select
+                            id="service"
+                            name="service"
+                        >
+
+                            <option value="">
+                                Select a service
+                            </option>
+
+                            <option value="ai-automation">
+                                AI Automation
+                            </option>
+
+                            <option value="workflow-automation">
+                                Workflow Automation
+                            </option>
+
+                            <option value="crm-automation">
+                                CRM Automation
+                            </option>
+
+                            <option value="ai-chatbot">
+                                AI Chatbot
+                            </option>
+
+                            <option value="sales-automation">
+                                Sales Automation
+                            </option>
+
+                            <option value="custom-system">
+                                Custom AI System
+                            </option>
+
+                            <option value="other">
+                                Something Else
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <div class="form-group">
+
+                        <label
+                            for="message"
+                        >
+                            Tell me about your project
+                        </label>
+
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Tell me what you'd like to automate..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- SUBMIT -->
+
+                    <button
+                        type="submit"
+                        class="contact-submit"
+                    >
+
+                        Send Message
+
+                        <i
+                            class="fa-solid fa-arrow-right"
+                        ></i>
+
+                    </button>
+
+
+                    <!-- FORM MESSAGE -->
+
+                    <div
+                        id="formMessage"
+                        class="form-message"
+                    ></div>
+
+
+                </form>
 
 
             </div>
@@ -1960,8 +2256,11 @@
 
         </div>
 
-    </section>
 
+    </div>
+
+
+</section>
 
     <!-- =====================================================
          BOOTSTRAP JAVASCRIPT
