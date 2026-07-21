@@ -1,484 +1,938 @@
-<!-- =========================
-     HERO SECTION
-========================= -->
+<!DOCTYPE html>
+<html lang="en">
 
-<section class="hero" id="home">
+<head>
 
-    <!-- Background Effects -->
-    <div class="hero-bg-glow glow-1"></div>
-    <div class="hero-bg-glow glow-2"></div>
+    <!-- =====================================================
+         BASIC SETTINGS
+    ====================================================== -->
 
-    <div class="container">
+    <meta charset="UTF-8">
 
-        <div class="row align-items-center hero-row">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
-            <!-- =========================
-                 LEFT CONTENT
-            ========================= -->
-
-            <div class="col-lg-6">
-
-                <div class="hero-content">
-
-                    <!-- Badge -->
-
-                    <div class="hero-badge">
-
-                        <span class="badge-dot"></span>
-
-                        AI AUTOMATION CONSULTANT
-
-                    </div>
+    <title>
+        AI Automation Consultant
+    </title>
 
 
-                    <!-- Heading -->
+    <!-- =====================================================
+         GOOGLE FONTS
+    ====================================================== -->
 
-                    <h1 class="hero-title">
-
-                        Automate the busywork.
-
-                        <br>
-
-                        <span>Scale what matters.</span>
-
-                    </h1>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
 
 
-                    <!-- Description -->
+    <!-- =====================================================
+         BOOTSTRAP
+    ====================================================== -->
 
-                    <p class="hero-description">
-
-                        I help growing businesses replace repetitive work
-                        with intelligent automation — so your team ships
-                        more, faster, without adding headcount.
-
-                    </p>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
 
 
-                    <!-- Buttons -->
+    <!-- =====================================================
+         FONT AWESOME
+    ====================================================== -->
 
-                    <div class="hero-buttons">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
 
-                        <a href="#contact" class="btn-main">
 
-                            Book a Free Call
+    <!-- =====================================================
+         YOUR CUSTOM CSS
+    ====================================================== -->
 
-                            <i class="fa-solid fa-arrow-right"></i>
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
 
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <nav class="navbar navbar-expand-lg">
+
+        <div class="container">
+
+
+            <!-- LOGO -->
+
+            <a
+                class="navbar-brand"
+                href="#home"
+            >
+                AI<span>.</span>FLOW
+            </a>
+
+
+            <!-- MOBILE MENU BUTTON -->
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mainNavbar"
+                aria-controls="mainNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+
+            <!-- NAVIGATION -->
+
+            <div
+                class="collapse navbar-collapse"
+                id="mainNavbar"
+            >
+
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+
+
+                    <!-- HOME -->
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="#home"
+                        >
+                            Home
                         </a>
 
+                    </li>
 
-                        <a href="#services" class="btn-outline-custom">
 
-                            Explore Services
+                    <!-- SERVICES -->
 
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="#services"
+                        >
+                            Services
                         </a>
 
-                    </div>
+                    </li>
 
 
-                    <!-- Statistics -->
+                    <!-- ABOUT -->
 
-                    <div class="hero-stats">
+                    <li class="nav-item">
 
+                        <a
+                            class="nav-link"
+                            href="#about"
+                        >
+                            About
+                        </a>
 
-                        <!-- Stat 1 -->
+                    </li>
 
-                        <div class="hero-stat">
 
-                            <h3>50+</h3>
+                    <!-- CONTACT -->
 
-                            <p>
+                    <li class="nav-item">
 
-                                Workflows Shipped
+                        <a
+                            class="nav-link"
+                            href="#contact"
+                        >
+                            Contact
+                        </a>
 
-                            </p>
+                    </li>
 
-                        </div>
 
+                    <!-- CTA -->
 
-                        <!-- Divider -->
+                    <li class="nav-item ms-lg-3">
 
-                        <div class="stat-divider"></div>
+                        <a
+                            href="#contact"
+                            class="btn-primary"
+                        >
+                            Book a Call
+                        </a>
 
+                    </li>
 
-                        <!-- Stat 2 -->
 
-                        <div class="hero-stat">
-
-                            <h3>30hr</h3>
-
-                            <p>
-
-                                Saved Weekly (avg)
-
-                            </p>
-
-                        </div>
-
-
-                        <!-- Divider -->
-
-                        <div class="stat-divider"></div>
-
-
-                        <!-- Stat 3 -->
-
-                        <div class="hero-stat">
-
-                            <h3>24/7</h3>
-
-                            <p>
-
-                                AI Coverage
-
-                            </p>
-
-                        </div>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-            <!-- =========================
-                 RIGHT AI VISUAL
-            ========================= -->
-
-            <div class="col-lg-6">
-
-                <div class="ai-visual" id="aiVisual">
-
-
-                    <!-- Background Grid -->
-
-                    <div class="ai-grid"></div>
-
-
-                    <!-- Floating Particles -->
-
-                    <div class="ai-particles">
-
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-
-                    </div>
-
-
-                    <!-- SVG CONNECTION NETWORK -->
-
-                    <svg
-                        class="ai-connections"
-                        viewBox="0 0 700 700"
-                        preserveAspectRatio="xMidYMid meet"
-                    >
-
-
-                        <!-- Top -->
-
-                        <line
-                            x1="350"
-                            y1="350"
-                            x2="350"
-                            y2="100"
-                        />
-
-
-                        <!-- Top Left -->
-
-                        <line
-                            x1="350"
-                            y1="350"
-                            x2="150"
-                            y2="190"
-                        />
-
-
-                        <!-- Top Right -->
-
-                        <line
-                            x1="350"
-                            y1="350"
-                            x2="550"
-                            y2="190"
-                        />
-
-
-                        <!-- Middle Left -->
-
-                        <line
-                            x1="350"
-                            y1="350"
-                            x2="100"
-                            y2="350"
-                        />
-
-
-                        <!-- Middle Right -->
-
-                        <line
-                            x1="350"
-                            y1="350"
-                            x2="600"
-                            y2="350"
-                        />
-
-
-                        <!-- Bottom Left -->
-
-                        <line
-                            x1="350"
-                            y1="350"
-                            x2="150"
-                            y2="520"
-                        />
-
-
-                        <!-- Bottom -->
-
-                        <line
-                            x1="350"
-                            y1="350"
-                            x2="350"
-                            y2="600"
-                        />
-
-
-                        <!-- Bottom Right -->
-
-                        <line
-                            x1="350"
-                            y1="350"
-                            x2="550"
-                            y2="520"
-                        />
-
-
-                    </svg>
-
-
-                    <!-- =========================
-                         AI CORE
-                    ========================= -->
-
-                    <div class="ai-core-wrapper">
-
-                        <div class="ai-core-glow"></div>
-
-                        <div class="ai-core">
-
-                            <div class="ai-core-inner">
-
-                                <i class="fa-solid fa-microchip"></i>
-
-                                <span>AI</span>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- =========================
-                         PLATFORM CARDS
-                    ========================= -->
-
-
-                    <!-- ChatGPT -->
-
-                    <div
-                        class="platform-card platform-chatgpt"
-                        data-speed="1"
-                    >
-
-                        <div class="platform-icon">
-
-                            <img
-                                src="assets/logos/openai.png"
-                                alt="ChatGPT"
-                            >
-
-                        </div>
-
-                        <span>ChatGPT</span>
-
-                    </div>
-
-
-                    <!-- Claude -->
-
-                    <div
-                        class="platform-card platform-claude"
-                        data-speed="1.2"
-                    >
-
-                        <div class="platform-icon">
-
-                            <img
-                                src="assets/logos/zapier.png"
-                                alt="Claude"
-                            >
-
-                        </div>
-
-                        <span>Claude</span>
-
-                    </div>
-
-
-                    <!-- n8n -->
-
-                    <div
-                        class="platform-card platform-n8n"
-                        data-speed="0.8"
-                    >
-
-                        <div class="platform-icon">
-
-                            <img
-                                src="assets/logos/n8n.png"
-                                alt="n8n"
-                            >
-
-                        </div>
-
-                        <span>n8n</span>
-
-                    </div>
-
-
-                    <!-- Make -->
-
-                    <div
-                        class="platform-card platform-make"
-                        data-speed="1.1"
-                    >
-
-                        <div class="platform-icon">
-
-                            <img
-                                src="assets/logos/make.jpg"
-                                alt="Make"
-                            >
-
-                        </div>
-
-                        <span>Make</span>
-
-                    </div>
-
-
-                    <!-- Zapier -->
-
-                    <div
-                        class="platform-card platform-zapier"
-                        data-speed="0.9"
-                    >
-
-                        <div class="platform-icon">
-
-                            <img
-                                src="assets/logos/zapier.png"
-                                alt="Zapier"
-                            >
-
-                        </div>
-
-                        <span>Zapier</span>
-
-                    </div>
-
-
-                    <!-- HubSpot -->
-
-                    <div
-                        class="platform-card platform-hubspot"
-                        data-speed="1.3"
-                    >
-
-                        <div class="platform-icon">
-
-                            <img
-                                src="assets/logos/hubspot.png"
-                                alt="HubSpot"
-                            >
-
-                        </div>
-
-                        <span>HubSpot</span>
-
-                    </div>
-
-
-                    <!-- GoHighLevel -->
-
-                    <div
-                        class="platform-card platform-ghl"
-                        data-speed="1"
-                    >
-
-                        <div class="platform-icon">
-
-                            <img
-                                src="assets/logos/facebook.png"
-                                alt="Facebook"
-                            >
-
-                        </div>
-
-                        <span>HighLevel</span>
-
-                    </div>
-
-
-                    <!-- Floating Labels -->
-
-
-                    <div class="ai-label label-workflow">
-
-                        <i class="fa-solid fa-diagram-project"></i>
-
-                        <span>Smart Workflows</span>
-
-                    </div>
-
-
-                    <div class="ai-label label-ai">
-
-                        <i class="fa-solid fa-brain"></i>
-
-                        <span>AI-Powered Decisions</span>
-
-                    </div>
-
-
-                    <div class="ai-label label-scale">
-
-                        <i class="fa-solid fa-chart-line"></i>
-
-                        <span>Scale Effortlessly</span>
-
-                    </div>
-
-
-                </div>
+                </ul>
 
             </div>
 
         </div>
 
-    </div>
+    </nav>
 
-</section>
+
+    <!-- =====================================================
+         HERO SECTION
+    ====================================================== -->
+
+    <section
+        class="hero"
+        id="home"
+    >
+
+
+        <!-- BACKGROUND GLOW -->
+
+        <div class="hero-bg-glow glow-1"></div>
+
+        <div class="hero-bg-glow glow-2"></div>
+
+
+        <div class="container">
+
+
+            <div class="row align-items-center hero-row">
+
+
+                <!-- =================================================
+                     LEFT SIDE — HERO CONTENT
+                ================================================== -->
+
+                <div class="col-lg-6">
+
+
+                    <div class="hero-content">
+
+
+                        <!-- BADGE -->
+
+                        <div class="hero-badge">
+
+                            <span class="badge-dot"></span>
+
+                            AI AUTOMATION CONSULTANT
+
+                        </div>
+
+
+                        <!-- MAIN HEADLINE -->
+
+                        <h1 class="hero-title">
+
+                            Automate the busywork.
+
+                            <br>
+
+                            <span>
+                                Scale what matters.
+                            </span>
+
+                        </h1>
+
+
+                        <!-- DESCRIPTION -->
+
+                        <p class="hero-description">
+
+                            I help growing businesses replace repetitive work
+                            with intelligent automation — so your team ships
+                            more, faster, without adding headcount.
+
+                        </p>
+
+
+                        <!-- BUTTONS -->
+
+                        <div class="hero-buttons">
+
+
+                            <!-- PRIMARY BUTTON -->
+
+                            <a
+                                href="#contact"
+                                class="btn-main"
+                            >
+
+                                Book a Free Call
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+
+                            <!-- SECONDARY BUTTON -->
+
+                            <a
+                                href="#services"
+                                class="btn-outline-custom"
+                            >
+
+                                Explore Services
+
+                            </a>
+
+
+                        </div>
+
+
+                        <!-- =================================================
+                             STATISTICS
+                        ================================================== -->
+
+                        <div class="hero-stats">
+
+
+                            <!-- STAT 1 -->
+
+                            <div class="hero-stat">
+
+                                <h3>
+                                    50+
+                                </h3>
+
+                                <p>
+                                    Workflows Shipped
+                                </p>
+
+                            </div>
+
+
+                            <!-- DIVIDER -->
+
+                            <div class="stat-divider"></div>
+
+
+                            <!-- STAT 2 -->
+
+                            <div class="hero-stat">
+
+                                <h3>
+                                    30hr
+                                </h3>
+
+                                <p>
+                                    Saved Weekly (avg)
+                                </p>
+
+                            </div>
+
+
+                            <!-- DIVIDER -->
+
+                            <div class="stat-divider"></div>
+
+
+                            <!-- STAT 3 -->
+
+                            <div class="hero-stat">
+
+                                <h3>
+                                    24/7
+                                </h3>
+
+                                <p>
+                                    AI Coverage
+                                </p>
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- =================================================
+                     RIGHT SIDE — AI AUTOMATION VISUAL
+                ================================================== -->
+
+                <div class="col-lg-6">
+
+
+                    <div
+                        class="ai-visual"
+                        id="aiVisual"
+                    >
+
+
+                        <!-- BACKGROUND GRID -->
+
+                        <div class="ai-grid"></div>
+
+
+                        <!-- =================================================
+                             FLOATING PARTICLES
+                        ================================================== -->
+
+                        <div class="ai-particles">
+
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             SVG CONNECTION LINES
+                        ================================================== -->
+
+                        <svg
+                            class="ai-connections"
+                            viewBox="0 0 700 700"
+                            preserveAspectRatio="xMidYMid meet"
+                        >
+
+
+                            <!-- CENTRAL TO CHATGPT -->
+
+                            <line
+                                x1="350"
+                                y1="350"
+                                x2="350"
+                                y2="75"
+                            />
+
+
+                            <!-- CENTRAL TO ANTHROPIC -->
+
+                            <line
+                                x1="350"
+                                y1="350"
+                                x2="115"
+                                y2="170"
+                            />
+
+
+                            <!-- CENTRAL TO N8N -->
+
+                            <line
+                                x1="350"
+                                y1="350"
+                                x2="585"
+                                y2="170"
+                            />
+
+
+                            <!-- CENTRAL TO MAKE -->
+
+                            <line
+                                x1="350"
+                                y1="350"
+                                x2="85"
+                                y2="350"
+                            />
+
+
+                            <!-- CENTRAL TO ZAPIER -->
+
+                            <line
+                                x1="350"
+                                y1="350"
+                                x2="615"
+                                y2="350"
+                            />
+
+
+                            <!-- CENTRAL TO HUBSPOT -->
+
+                            <line
+                                x1="350"
+                                y1="350"
+                                x2="160"
+                                y2="560"
+                            />
+
+
+                            <!-- CENTRAL TO MICROSOFT -->
+
+                            <line
+                                x1="350"
+                                y1="350"
+                                x2="540"
+                                y2="560"
+                            />
+
+
+                            <!-- ADDITIONAL NETWORK CONNECTIONS -->
+
+                            <line
+                                x1="115"
+                                y1="170"
+                                x2="350"
+                                y2="75"
+                            />
+
+                            <line
+                                x1="585"
+                                y1="170"
+                                x2="350"
+                                y2="75"
+                            />
+
+                            <line
+                                x1="85"
+                                y1="350"
+                                x2="160"
+                                y2="560"
+                            />
+
+                            <line
+                                x1="615"
+                                y1="350"
+                                x2="540"
+                                y2="560"
+                            />
+
+
+                        </svg>
+
+
+                        <!-- =================================================
+                             AI CORE
+                        ================================================== -->
+
+                        <div class="ai-core-wrapper">
+
+
+                            <!-- CORE GLOW -->
+
+                            <div class="ai-core-glow"></div>
+
+
+                            <!-- CORE -->
+
+                            <div class="ai-core">
+
+
+                                <div class="ai-core-inner">
+
+
+                                    <i
+                                        class="fa-solid fa-microchip"
+                                    ></i>
+
+
+                                    <span>
+                                        AI
+                                    </span>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- =================================================
+                             PLATFORM 1 — CHATGPT
+                        ================================================== -->
+
+                        <div
+                            class="platform-card platform-chatgpt"
+                            data-speed="1"
+                        >
+
+                            <div class="platform-icon">
+
+                                <img
+                                    src="assets/logos/chatgpt.png"
+                                    alt="ChatGPT"
+                                >
+
+                            </div>
+
+                            <span>
+                                ChatGPT
+                            </span>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             PLATFORM 2 — ANTHROPIC
+                        ================================================== -->
+
+                        <div
+                            class="platform-card platform-anthropic"
+                            data-speed="1.2"
+                        >
+
+                            <div class="platform-icon">
+
+                                <img
+                                    src="assets/logos/anthropic.png"
+                                    alt="Anthropic"
+                                >
+
+                            </div>
+
+                            <span>
+                                Anthropic
+                            </span>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             PLATFORM 3 — N8N
+                        ================================================== -->
+
+                        <div
+                            class="platform-card platform-n8n"
+                            data-speed="0.8"
+                        >
+
+                            <div class="platform-icon">
+
+                                <img
+                                    src="assets/logos/n8n.png"
+                                    alt="n8n"
+                                >
+
+                            </div>
+
+                            <span>
+                                n8n
+                            </span>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             PLATFORM 4 — MAKE
+                        ================================================== -->
+
+                        <div
+                            class="platform-card platform-make"
+                            data-speed="1.1"
+                        >
+
+                            <div class="platform-icon">
+
+                                <img
+                                    src="assets/logos/make.png"
+                                    alt="Make"
+                                >
+
+                            </div>
+
+                            <span>
+                                Make
+                            </span>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             PLATFORM 5 — ZAPIER
+                        ================================================== -->
+
+                        <div
+                            class="platform-card platform-zapier"
+                            data-speed="0.9"
+                        >
+
+                            <div class="platform-icon">
+
+                                <img
+                                    src="assets/logos/zapier.png"
+                                    alt="Zapier"
+                                >
+
+                            </div>
+
+                            <span>
+                                Zapier
+                            </span>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             PLATFORM 6 — HUBSPOT
+                        ================================================== -->
+
+                        <div
+                            class="platform-card platform-hubspot"
+                            data-speed="1.3"
+                        >
+
+                            <div class="platform-icon">
+
+                                <img
+                                    src="assets/logos/hubspot.png"
+                                    alt="HubSpot"
+                                >
+
+                            </div>
+
+                            <span>
+                                HubSpot
+                            </span>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             PLATFORM 7 — MICROSOFT AI
+                        ================================================== -->
+
+                        <div
+                            class="platform-card platform-microsoft"
+                            data-speed="1"
+                        >
+
+                            <div class="platform-icon">
+
+                                <img
+                                    src="assets/logos/microsoft.png"
+                                    alt="Microsoft AI"
+                                >
+
+                            </div>
+
+                            <span>
+                                Microsoft AI
+                            </span>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             FLOATING LABEL — WORKFLOWS
+                        ================================================== -->
+
+                        <div
+                            class="ai-label label-workflow"
+                        >
+
+                            <i
+                                class="fa-solid fa-diagram-project"
+                            ></i>
+
+                            <span>
+                                Smart Workflows
+                            </span>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             FLOATING LABEL — AI
+                        ================================================== -->
+
+                        <div
+                            class="ai-label label-ai"
+                        >
+
+                            <i
+                                class="fa-solid fa-brain"
+                            ></i>
+
+                            <span>
+                                AI-Powered Decisions
+                            </span>
+
+                        </div>
+
+
+                        <!-- =================================================
+                             FLOATING LABEL — SCALE
+                        ================================================== -->
+
+                        <div
+                            class="ai-label label-scale"
+                        >
+
+                            <i
+                                class="fa-solid fa-chart-line"
+                            ></i>
+
+                            <span>
+                                Scale Effortlessly
+                            </span>
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+    </section>
+
+
+    <!-- =====================================================
+         SERVICES SECTION
+    ====================================================== -->
+
+    <section
+        id="services"
+        class="services-section"
+    >
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <h2>
+                    AI Automation Services
+                </h2>
+
+                <p>
+                    Build smarter systems that save time,
+                    reduce repetitive work, and help your
+                    business scale.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         ABOUT SECTION
+    ====================================================== -->
+
+    <section
+        id="about"
+        class="about-section"
+    >
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <h2>
+                    About
+                </h2>
+
+                <p>
+                    I help businesses use AI and automation
+                    to create efficient, scalable workflows.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         CONTACT SECTION
+    ====================================================== -->
+
+    <section
+        id="contact"
+        class="contact-section"
+    >
+
+        <div class="container">
+
+
+            <div class="section-title">
+
+                <h2>
+                    Let's Automate Your Business
+                </h2>
+
+                <p>
+                    Ready to eliminate repetitive work?
+                    Let's talk about what we can automate.
+                </p>
+
+
+                <br>
+
+
+                <a
+                    href="mailto:hello@example.com"
+                    class="btn-main"
+                >
+
+                    Book a Free Call
+
+                    <i
+                        class="fa-solid fa-arrow-right"
+                    ></i>
+
+                </a>
+
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         BOOTSTRAP JAVASCRIPT
+    ====================================================== -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+
+    <!-- =====================================================
+         YOUR CUSTOM JAVASCRIPT
+    ====================================================== -->
+
+    <script
+        src="js/script.js"
+    ></script>
+
+
+</body>
+
+</html>
