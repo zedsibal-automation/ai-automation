@@ -1062,5 +1062,20 @@ if (contactForm) {
     );
 
 }
+/* =====================================================
+   FOOTER CURRENT YEAR
+====================================================== */
 
+const currentYear =
+    document.querySelector(
+        "#currentYear"
+    );
+
+
+if (currentYear) {
+
+    currentYear.textContent =
+        new Date().getFullYear();
+
+}
 });
