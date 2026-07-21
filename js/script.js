@@ -987,6 +987,80 @@ document.addEventListener("DOMContentLoaded", function () {
         "%c AI Automation Website Loaded ",
         "background: #00bfff; color: #ffffff; padding: 8px 15px; border-radius: 5px; font-weight: bold;"
     );
+/* =====================================================
+   CONTACT FORM
+====================================================== */
 
+const contactForm =
+    document.querySelector(
+        "#contactForm"
+    );
+
+
+const formMessage =
+    document.querySelector(
+        "#formMessage"
+    );
+
+
+if (contactForm) {
+
+    contactForm.addEventListener(
+        "submit",
+        function (event) {
+
+            event.preventDefault();
+
+
+            const submitButton =
+                contactForm.querySelector(
+                    ".contact-submit"
+                );
+
+
+            const originalText =
+                submitButton.innerHTML;
+
+
+            submitButton.innerHTML =
+                `
+                Sending...
+
+                <i
+                    class="fa-solid fa-spinner fa-spin"
+                ></i>
+                `;
+
+
+            submitButton.disabled =
+                true;
+
+
+            setTimeout(
+                function () {
+
+                    formMessage.textContent =
+                        "Thanks! Your message has been received. I'll get back to you soon.";
+
+
+                    contactForm.reset();
+
+
+                    submitButton.innerHTML =
+                        originalText;
+
+
+                    submitButton.disabled =
+                        false;
+
+
+                },
+                1500
+            );
+
+        }
+    );
+
+}
 
 });
